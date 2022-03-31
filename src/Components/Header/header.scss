@@ -1,0 +1,29 @@
+.header-container , .header-logos , .header-input-container , .header-left , .header-right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-container {
+    padding: 10px;
+}
+
+.header-left {
+    max-width: 900px;
+    width: 100%;
+}
+
+.header-form {
+    max-width: 700px;
+    width: 100%;
+}
+
+.header-logos {
+    max-width: 164px;
+    width: 100%;
+}
+
+.header-right {
+    max-width: 200px;
+    width: 100%;
+}
