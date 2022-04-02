@@ -1,0 +1,32 @@
+.users {
+    &__title {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 23px;
+      margin-bottom: 20px;
+    }
+    &__list {
+      display: flex;
+      flex-direction: column;
+      padding-left: 0;
+    }
+    &__item {
+      display: flex;
+      align-items: center;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      text-decoration: none;
+      color: #898989;
+      &:not(:last-child) {
+        margin-bottom: 23px;
+      }
+    }
+    &__img {
+      height: 26px;
+      width: 26px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+  }
+  

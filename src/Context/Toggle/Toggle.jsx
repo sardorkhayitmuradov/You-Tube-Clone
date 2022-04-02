@@ -3,10 +3,10 @@ import React from "react";
 const Context = React.createContext();
 
 function Provider({ children }) {
-  const [toggle, setToggle] = React.useState();
+  const [toggleButton, setToggleButton] = React.useState();
 
   return (
-    <Context.Provider value={{ toggle, setToggle }}>{children}</Context.Provider>
+    <Context.Provider value={{ toggleButton, setToggleButton }}>{children}</Context.Provider>
   );
 }
 

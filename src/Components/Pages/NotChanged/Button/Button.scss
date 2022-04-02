@@ -1,0 +1,18 @@
+.subscribe {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 10px 20px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background: #ff0000;
+  border-radius: 20px;
+  text-align: center;
+  color: #ffffff;
+  transition: all 0.3s;
+  margin-right: 40px;
+  &:active {
+    transform: translateY(2px);
+  }
+}

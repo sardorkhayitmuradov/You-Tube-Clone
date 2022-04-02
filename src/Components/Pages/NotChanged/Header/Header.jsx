@@ -1,29 +1,30 @@
 import React from 'react';
 
-import Logo from "../../Assets/Images/logo.svg";
-import LiveTranslating from '../../Assets/Images/livetranslater.svg';
-import Dots from '../../Assets/Images/dots.svg';
-import Bell from '../../Assets/Images/bell.svg';
-import User from '../../Assets/Images/userpic.svg';
+import Logo from "../../../../Assets/Images/logo.svg";
+import LiveTranslating from '../../../../Assets/Images/livetranslater.svg';
+import Dots from '../../../../Assets/Images/dots.svg';
+import Bell from '../../../../Assets/Images/bell.svg';
+import User from '../../../../Assets/Images/userpic.svg';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import Paper from '@mui/material/Paper';
 import InputBase from '@mui/material/InputBase';
 import SearchIcon from '@mui/icons-material/Search';
 
-import { Context as ToggleContext} from '../../Context/Toggle/Toggle'
+import { Context as ToggleContext} from '../../../../Context/Toggle/Toggle'
 
 import { NavLink } from "react-router-dom";
 
 import "./header.scss"
+import '../Toggle-Features/ToggleFeatures.scss'
 
 
 function Header() {
 
-    const { toggle, setToggle } = React.useContext(ToggleContext);
+    const { toggleButton } = React.useContext(ToggleContext);
 
-    const handleClick = () => {
-        toggle.current.classList.toggle("close");
+    const handleClick = () => { 
+        toggleButton.current.classList.add("close");
     };
 
   return (
@@ -37,7 +38,7 @@ function Header() {
                         component="form"
                         sx={{ p: '0', display: 'flex', alignItems: 'center', boxShadow: 0}}
                     >
-                        <IconButton onClick={handleClick} sx={{ p: '1px' , boxShadow: 0 }} aria-label="menu">
+                        <IconButton  onClick={handleClick} sx={{ p: '1px' , boxShadow: 0 }} aria-label="menu">
                             <MenuIcon />
                         </IconButton>
                     </Paper>

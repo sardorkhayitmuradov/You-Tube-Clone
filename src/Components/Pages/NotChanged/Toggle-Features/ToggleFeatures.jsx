@@ -1,16 +1,18 @@
 import React from 'react'
 
-import Home from '../../Assets/Images/home.svg';
-import Trending from '../../Assets/Images/trending.svg';
-import Subscriptions from '../../Assets/Images/subscriptions.svg';
-import Library from '../../Assets/Images/library.svg';
-import History from '../../Assets/Images/history.svg';
-import WatchLater from '../../Assets/Images/watchlater.svg';
-import Favourites from '../../Assets/Images/favourites.svg';
-import LikedVideos from '../../Assets/Images/likedvideos.svg';
-import Music from '../../Assets/Images/music.svg';
-import Games from '../../Assets/Images/games.svg';
-import ShowMore from '../../Assets/Images/showmore.svg';
+import Users from './Users/Users';
+
+import Home from '../../../../Assets/Images/home.svg';
+import Trending from '../../../../Assets/Images/trending.svg';
+import Subscriptions from '../../../../Assets/Images/subscriptions.svg';
+import Library from '../../../../Assets/Images/library.svg';
+import History from '../../../../Assets/Images/history.svg';
+import WatchLater from '../../../../Assets/Images/watchlater.svg';
+import Favourites from '../../../../Assets/Images/favourites.svg';
+import LikedVideos from '../../../../Assets/Images/likedvideos.svg';
+import Music from '../../../../Assets/Images/music.svg';
+import Games from '../../../../Assets/Images/games.svg';
+import ShowMore from '../../../../Assets/Images/showmore.svg';
 
 import { NavLink } from "react-router-dom";
 
@@ -110,6 +112,8 @@ function ToggleFeatures() {
             </NavLink>
           </li>
         </ul>
+
+        <Users/>
       </div>
     </>
   )

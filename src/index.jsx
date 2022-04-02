@@ -7,6 +7,9 @@ import 'bootstrap/dist/js/bootstrap.min.js';
 
 import { Provider as LoginProvider } from "./Context/Login/Authentication";
 import { Provider as ToggleProvider} from "./Context/Toggle/Toggle";
+import { Provider as UsersProvider } from "./Context/Users/Users";
+import { Provider as VideosProvider } from "./Context/Videos/Videos";
+
 import { BrowserRouter } from "react-router-dom";
 
 ReactDOM.render(
@@ -14,7 +17,11 @@ ReactDOM.render(
     <BrowserRouter>
       <ToggleProvider>
         <LoginProvider>
-          <App />
+          <VideosProvider>
+            <UsersProvider>
+              <App />
+            </UsersProvider>
+          </VideosProvider>
         </LoginProvider>
       </ToggleProvider>
     </BrowserRouter>

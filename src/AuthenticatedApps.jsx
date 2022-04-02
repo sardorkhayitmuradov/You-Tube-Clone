@@ -1,20 +1,12 @@
 import React from "react";
-import Header from "./Components/Header/Header";
-import Main from "./Components/Main/Main";
-import ToggleFeatures from "./Components/Toggle-Features/ToggleFeatures";
-import Recommend from "./Components/Recommend/Users";
+import Home from "./Components/Pages/Home/Home"
 
 import './App.scss'
 
 const AuthenticatedApp = () => {
   return (
     <div className="app">
-      <Header/>
-      <main className="main">
-        <Main />
-        <ToggleFeatures />
-        <Recommend />
-      </main>
+      <Home />
     </div>
   );
 };
