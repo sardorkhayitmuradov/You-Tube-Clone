@@ -11,6 +11,7 @@ const Profile = () => {
   const { videos } = React.useContext(Context);
   const { users } = React.useContext(UserContext);
   const [video, setVideo] = React.useState([]);
+  console.log(videos)
 
   React.useEffect(() => {
     if (videos.length > 0) {
@@ -18,10 +19,11 @@ const Profile = () => {
     }
   }, [videos]);
 
+
   return (
     <div className="home__top">
       <div className="home__top-user">
-        <NavLink className="home__user" to={"/chanel/" + users[0]?.id}>
+        <NavLink className="home__user" to={"/channel/" + users[0]?.id}>
           <img
             className="home__user-avatar"
             src={users[0]?.avatar}

@@ -22,7 +22,7 @@ const Users = () => {
       <h2 className="users__title">Subscriptions</h2>
       <ul className="users__list">
         {users.map(user => (
-          <Link to={"/chanel/" + user.id} key={user.id} className="users__item">
+          <Link to={ `/channel/${user.id}`} key={user.id} className="users__item">
             <img
               className="users__img"
               src={user.avatar}

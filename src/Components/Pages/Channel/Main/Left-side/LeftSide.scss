@@ -1,0 +1,28 @@
+.main-left {
+    &__title {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      color: #c2c2c2;
+      margin-bottom: 30px;
+    }
+    &__list {
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+    }
+    &__item {
+      cursor: pointer;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 23px;
+      display: flex;
+      align-items: center;
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+    &__users-img {
+      margin-right: 20px;
+    }
+  }

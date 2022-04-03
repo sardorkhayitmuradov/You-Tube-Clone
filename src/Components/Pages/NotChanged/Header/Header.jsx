@@ -30,7 +30,7 @@ function Header() {
   return (
     <>
       <header className='header'>
-        <div className="container header-container">
+        <div className="header-container">
             <div className="header-left">
                 <div className='header-logos'>
                     <Paper
@@ -42,13 +42,13 @@ function Header() {
                             <MenuIcon />
                         </IconButton>
                     </Paper>
-                    <a className='youtubelogo'>
+                    <NavLink to={'/'} className='youtubelogo'>
                         <img src={Logo} alt="Youtube Logo" className='youtube-logo-img' width='116' height='25' />
-                    </a>
+                    </NavLink>
                 </div>
 
                 <div className="header-form">
-                    <form className="form">
+                    <div className="form">
                         <div className="header-input-container">
                             <Paper
                                 className="input"
@@ -68,7 +68,7 @@ function Header() {
                                 </IconButton>
                             </Paper>
                         </div>
-                    </form>
+                    </div>
                 </div>
           </div>
           <div className='header-right'>

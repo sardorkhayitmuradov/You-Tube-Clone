@@ -5,11 +5,14 @@ import Arrows from "../../Home/Arrows/Arrows";
 import Buttons from "../../NotChanged/Button/Button";
 
 import { Context } from "../../../../Context/Videos/Videos";
+import { Context as UserContext } from '../../../../Context/Users/Users'
 
 import "./Channel.scss";
 
+
 const Channel = () => {
   const { videos } = React.useContext(Context);
+  const { users } = React.useContext(UserContext);
   const [video, setVideo] = React.useState([]);
 
   React.useEffect(() => {
@@ -27,7 +30,7 @@ const Channel = () => {
             src={UserChannelImg}
             alt="avatar"
           />
-          <h4 className="navigate__title">Food & Drink</h4>
+          <NavLink to={"/channel/" + users[0]?.id} className="navigate__title">Food & Drink</NavLink>
           <p className="navigate__text">Recommended channel for you</p>
         </div>
         <div className="navigate__top-boxes">

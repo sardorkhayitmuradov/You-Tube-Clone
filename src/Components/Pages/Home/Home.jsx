@@ -4,11 +4,19 @@ import ToggleFeatures from '../NotChanged/Toggle-Features/ToggleFeatures';
 import UserProfile from './UserProfile/Profile'
 import Recommend from './RecommendVideos/Recommend';
 import UserChannel from './UserChannel/Channel';
-import { Context } from '../../../Context/Videos/Videos'
+import { Context } from '../../../Context/Videos/Videos';
+import { Context as ToggleContext} from "../../../Context/Toggle/Toggle";
 
 import './Home.scss'
 
 function Home() {
+
+  const { setToggleButton } = React.useContext(ToggleContext);
+
+  React.useEffect(() => {
+    setToggleButton(true);
+  }, []);
+
 
   const { videos, setVideos } = React.useContext(Context);
 

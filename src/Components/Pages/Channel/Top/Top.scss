@@ -1,0 +1,52 @@
+.channel {
+    &_topside {
+      margin-bottom: 20px;
+    }
+    &__topside-Image {
+      height: 280px;
+      margin-bottom: 30px;
+    }
+    &__topside-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      &-user-image {
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        margin-right: 14px;
+      }
+      &-user-name {
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 33px;
+        padding: 0;
+        margin: 0;
+      }
+      &-user-subscribed {
+        padding: 0;
+        margin: 0;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+        color: #c2c2c2;
+      }
+      &-left {
+        display: flex;
+        align-items: center;
+      }
+      &-right {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      &-icon {
+        margin-right: 20px;
+        cursor: pointer;
+      }
+    }
+  }
+.subscribe {
+  margin: 0;
+}
