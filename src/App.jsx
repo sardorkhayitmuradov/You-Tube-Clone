@@ -11,7 +11,7 @@ function App() {
   if (token) {
     return (
       <>
-        <AuthenticatedApp />
+          <AuthenticatedApp />
       </>
     )  
   } else {

@@ -4,15 +4,16 @@
     line-height: 33px;
   }
 
-  .channel-bottomside__list {
-    overflow: auto;
-  }
 
-.card {
-  max-width: 200px;
-  width: 100%;
+.channel-bottomside__list {
+  overflow: auto;
 }
 
 .card {
-  padding: 10px;
+  width: 100%;
+}
+
+.card-box {
+  margin: 10px;
+  text-decoration: none;
 }

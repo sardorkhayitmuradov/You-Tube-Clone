@@ -10,8 +10,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Paper from '@mui/material/Paper';
 import InputBase from '@mui/material/InputBase';
 import SearchIcon from '@mui/icons-material/Search';
-
-import { Context as ToggleContext} from '../../../../Context/Toggle/Toggle'
+// import { Context as MenuContext } from "../../../../Context/Menu/Menu";
 
 import { NavLink } from "react-router-dom";
 
@@ -21,11 +20,12 @@ import '../Toggle-Features/ToggleFeatures.scss'
 
 function Header() {
 
-    const { toggleButton } = React.useContext(ToggleContext);
+    // // const { menu } = React.useContext(MenuContext);
+    // const handleClick = () => {
+    //     menu.current.classList.toggle("close");
+    // };
 
-    const handleClick = () => { 
-        toggleButton.current.classList.add("close");
-    };
+    // console.log(menu)
 
   return (
     <>
@@ -38,7 +38,7 @@ function Header() {
                         component="form"
                         sx={{ p: '0', display: 'flex', alignItems: 'center', boxShadow: 0}}
                     >
-                        <IconButton  onClick={handleClick} sx={{ p: '1px' , boxShadow: 0 }} aria-label="menu">
+                        <IconButton  sx={{ p: '1px' , boxShadow: 0 }} aria-label="menu">
                             <MenuIcon />
                         </IconButton>
                     </Paper>

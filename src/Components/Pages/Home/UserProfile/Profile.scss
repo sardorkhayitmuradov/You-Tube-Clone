@@ -74,16 +74,8 @@
   margin: 0;
 }
 
-.home__lists {
-  display: flex;
-  overflow-x: hidden;
-  padding-left: 0;
-  margin-bottom: 0;
+.home-profile-lists {
+  overflow: auto;
 
-  &:hover {
-    overflow: auto;
-  }
-  &::-webkit-scrollbar {
-    height: 1px;
-  }
+  
 }

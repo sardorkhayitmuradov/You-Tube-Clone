@@ -11,11 +11,9 @@ const Profile = () => {
   const { videos } = React.useContext(Context);
   const { users } = React.useContext(UserContext);
   const [video, setVideo] = React.useState([]);
-  console.log(videos)
-
   React.useEffect(() => {
     if (videos.length > 0) {
-      setVideo(videos.slice(0, 5));
+      setVideo(videos.slice(0, 10));
     }
   }, [videos]);
 
@@ -36,11 +34,11 @@ const Profile = () => {
         <Arrows />
       </div>
 
-      <ul className="home__lists">
+      <ul className="home-profile-lists d-flex p-0">
         {videos.length > 0 &&
           video.map(vid => (
             <NavLink
-              className="home__top-item"
+              className="card-box"
               to={"/video/" + vid.id}
               key={vid.id}
             >

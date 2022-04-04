@@ -7,11 +7,18 @@
       margin-bottom: 30px;
     }
     &__list {
-      display: flex;
       flex-direction: column;
       padding: 0;
     }
+
+    &__info {
+      display: flex;
+      text-decoration: none;
+      color: #19202C;
+    }
+
     &__item {
+      display: flex;
       cursor: pointer;
       font-weight: 700;
       font-size: 18px;

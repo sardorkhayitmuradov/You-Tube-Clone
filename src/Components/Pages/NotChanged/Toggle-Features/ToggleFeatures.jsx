@@ -13,15 +13,19 @@ import LikedVideos from '../../../../Assets/Images/likedvideos.svg';
 import Music from '../../../../Assets/Images/music.svg';
 import Games from '../../../../Assets/Images/games.svg';
 import ShowMore from '../../../../Assets/Images/showmore.svg';
+import Settings from '../../../../Assets/Images/settings.svg';
+import { Context as MenuContext } from "../../../../Context/Menu/Menu";
 
 import { NavLink } from "react-router-dom";
 
 import './ToggleFeatures.scss'
 
 function ToggleFeatures() {
+
+  const getItemRef = React.useRef();
+  
   return (
-    <>
-      <div className="menu-container">
+      <div ref={getItemRef} className="menu-container" >
         <ul className="menu-lists">
           <li className="menu-item">
             <NavLink to={'/'} className="menu-item-links">
@@ -32,7 +36,7 @@ function ToggleFeatures() {
             </NavLink>
           </li>
           <li className="menu-item">
-            <NavLink to={'/'} className="menu-item-links">
+            <NavLink to={'/trending'} className="menu-item-links">
               <div className="img-container">
                 <img src={Trending} alt="Home" className='menu-icon' />
               </div>
@@ -40,7 +44,7 @@ function ToggleFeatures() {
             </NavLink>
           </li>
           <li className="menu-item subscriptions">
-            <NavLink to={'/'} className="menu-item-links">
+            <NavLink to={'/subscriptions'} className="menu-item-links">
               <div className="img-container">
                 <img src={Subscriptions} alt="Home" className='menu-icon' />
               </div>
@@ -48,7 +52,7 @@ function ToggleFeatures() {
             </NavLink>
           </li>
           <li className="menu-item">
-            <NavLink to={'/'} className="menu-item-links">
+            <NavLink to={'/library'} className="menu-item-links">
               <div className="img-container">
                 <img src={Library} alt="Home" className='menu-icon' />
               </div>
@@ -56,7 +60,7 @@ function ToggleFeatures() {
             </NavLink>
           </li>
           <li className="menu-item">
-            <NavLink to={'/'} className="menu-item-links">
+            <NavLink to={'/history'} className="menu-item-links">
               <div className="img-container">
                 <img src={History} alt="Home" className='menu-icon' />
               </div>
@@ -64,7 +68,7 @@ function ToggleFeatures() {
             </NavLink>
           </li>
           <li className="menu-item">
-            <NavLink to={'/'} className="menu-item-links">
+            <NavLink to={'/watchLater'} className="menu-item-links">
               <div className="img-container">
                 <img src={WatchLater} alt="Home" className='menu-icon' />
               </div>
@@ -72,7 +76,7 @@ function ToggleFeatures() {
             </NavLink>
           </li>
           <li className="menu-item">
-            <NavLink to={'/'} className="menu-item-links">
+            <NavLink to={'/favourites'} className="menu-item-links">
               <div className="img-container">
                 <img src={Favourites} alt="Home" className='menu-icon' />
               </div>
@@ -80,7 +84,7 @@ function ToggleFeatures() {
             </NavLink>
           </li>
           <li className="menu-item">
-            <NavLink to={'/'} className="menu-item-links">
+            <NavLink to={'/likedVideos'} className="menu-item-links">
               <div className="img-container">
                 <img src={LikedVideos} alt="Home" className='menu-icon' />
               </div>
@@ -88,7 +92,7 @@ function ToggleFeatures() {
             </NavLink>
           </li>
           <li className="menu-item">
-            <NavLink to={'/'} className="menu-item-links">
+            <NavLink to={'/music'} className="menu-item-links">
               <div className="img-container">
                 <img src={Music} alt="Home" className='menu-icon' />
               </div>
@@ -96,7 +100,7 @@ function ToggleFeatures() {
             </NavLink>
           </li>
           <li className="menu-item">
-            <NavLink to={'/'} className="menu-item-links">
+            <NavLink to={'/games'} className="menu-item-links">
               <div className="img-container">
                 <img src={Games} alt="Home" className='menu-icon' />
               </div>
@@ -104,18 +108,24 @@ function ToggleFeatures() {
             </NavLink>
           </li>
           <li className="menu-item">
-            <NavLink to={'/'} className="menu-item-links">
+            <NavLink to={'/showMore'} className="menu-item-links menu-show-more">
               <div className="img-container">
                 <img src={ShowMore} alt="Home" className='menu-icon' />
               </div>
               <p className='menu-item-desc'>Show more</p>
             </NavLink>
           </li>
+        <Users />
+          <li className="menu-item">
+            <NavLink to={'/showMore'} className="menu-item-links">
+              <div className="img-container">
+                <img src={Settings} alt="Home" className='menu-icon' />
+              </div>
+              <p className='menu-item-desc'>Settings</p>
+            </NavLink>
+          </li>
         </ul>
-
-        <Users/>
       </div>
-    </>
   )
 }
 

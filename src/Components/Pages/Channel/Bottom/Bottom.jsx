@@ -6,16 +6,17 @@ import { Context as UsersContext } from "../../../../Context/Users/Users";
 
 import { useParams } from "react-router-dom";
 
+import './Bottom.scss'
+
 const Bottom = () => {
   const { videos } = React.useContext(VideoContext);
   const { users } = React.useContext(UsersContext);
   const [video, setVideo] = React.useState([]);
-  console.log(videos)
   const { channelId } = useParams();  /// QARA
 
   React.useEffect(() => {
     if (videos.length > 0) {
-      setVideo(videos.slice(1, 5));
+      setVideo(videos.slice(1, 35));
     }
   }, [videos]);
 

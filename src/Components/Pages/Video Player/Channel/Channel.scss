@@ -1,0 +1,130 @@
+.player {
+    max-width: 900px;
+    width: 100%;
+}
+
+.video__info {
+    padding-left: 50px;
+    padding-right: 40px;
+    &-video {
+      box-sizing: border-box;
+      max-width: 1000px;
+      width: 100%;
+      height: 450px;
+      border-radius: 14px;
+      margin-bottom: 10px;
+      
+    }
+    &-bottom {
+      padding-top: 20px;
+      display: flex;
+      justify-content: space-between;
+    }
+    &-userinfo {
+      max-width: 800px;
+      width: 100%;
+    }
+    &-user-box {
+      display: flex;
+    }
+    &-user-img {
+      margin-right: 12px;
+    }
+    &-username {
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 33px;
+      margin: 0;
+      margin-bottom: 4px;
+    }
+    &-published {
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 16px;
+      margin-bottom: 14px;
+      color: #c2c2c2;
+    }
+    &-bio {
+      color: #000000;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 22px;
+      margin-bottom: 15px;
+      opacity: 0.6;
+    }
+    &-show-btn {
+      border: none;
+      background: none;
+      font-weight: 400;
+      font-size: 19px;
+      line-height: 25px;
+      padding: 0;
+      color: #c2c2c2;
+    }
+    &-title {
+      text-decoration: none;
+      color: #19202C;
+    }
+  }
+  
+  .video__player {
+    padding-bottom: 10px;
+    border-bottom: solid 1px rgba(216, 216, 216, 0.5);
+    &-title {
+      text-transform: capitalize;
+      margin: 0 0 4px;
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 30px;
+      
+    }
+    &-views {
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 25px;
+      color: #c2c2c2;
+    }
+    &-list {
+        list-style: none;
+      display: flex;
+      align-items: center;
+    }
+    &-btns {
+      background: #ebebeb;
+      mix-blend-mode: normal;
+      opacity: 0.3;
+      border-radius: 20px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      padding: 5px 20px;
+      border: none;
+      cursor: pointer;
+      align-items: center;
+      margin-right: 10px;
+      &-icon {
+        margin-right: 8px;
+      }
+      &-content {
+          color: black;
+      }
+    }
+    &-video-info {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  
+    &-more-btn {
+      margin-left: 40px;
+      cursor: pointer;
+    }
+  }
+
+.video-player-btns-content {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    margin-top: 0;
+    color: black;
+}

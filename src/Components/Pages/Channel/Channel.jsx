@@ -5,17 +5,10 @@ import Top from './Top/Top'
 import Main from './Main/Main';
 import Bottom from './Bottom/Bottom';
 
-import { Context } from "../../../Context/Toggle/Toggle";
-
 import './Channel.scss';
 
 function Channel() {
 
-  const { setToggleButton } = React.useContext(Context);
-
-  React.useEffect(() => {
-    setToggleButton(true);
-  }, []);
 
   return (
     <>

@@ -20,6 +20,7 @@
 .menu-item-links {
     display: flex;
     align-items: center;
+    color: #898989;
 }
 
 .img-container {
@@ -38,5 +39,13 @@
 
 .menu-item-links {
     text-decoration: none;
+}
+
+.menu-users {
+    margin-bottom: 10px;
+}
+
+.menu-show-more {
+    margin-bottom: 20px;
 }
 

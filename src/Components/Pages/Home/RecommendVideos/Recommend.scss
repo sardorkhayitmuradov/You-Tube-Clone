@@ -10,16 +10,18 @@
     &__title {
       margin: 0;
     }
-    &__list {
-      display: flex;
-    }
-    &__item:not(:last-child) {
-      margin-right: 40px;
-    }
     &__videos {
       width: 540px;
       height: 250px;
       border-radius: 14px;
       margin-bottom: 10px;
     }
+  }
+
+  .recommend__item {
+    margin: 5px 20px 20px 0;
+  }
+
+  .home-recommend-lists {
+    overflow: auto;
   }

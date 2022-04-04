@@ -14,16 +14,15 @@ const Recommended = () => {
 
   React.useEffect(() => {
     if (videos.length > 0) {
-      setVideo(videos.slice(5, 8));
+      setVideo(videos.slice(5, 21));
     }
   }, [videos]);
   return (
     <div className="recommend">
       <div className="recommend__top">
         <h2 className="recommend__title">Recommended</h2>
-        <Arrows />
       </div>
-      <ul className="home__lists">
+      <ul className="home-recommend-lists d-flex p-0">
         {video.length > 0 &&
           video.map(vid => (
             <NavLink

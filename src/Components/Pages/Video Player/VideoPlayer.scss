@@ -1,0 +1,14 @@
+.main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-player {
+    display: flex;
+    max-width: 1100px;
+    width: 100%;
+}
+
+.player-toggle {
+    display: none !important;
+}

@@ -40,7 +40,7 @@ const MiddlePlayer = () => {
           <img className="middle__left-video" src={video?.url} alt="video" />
         </NavLink>
         <div className="middle__left-info">
-          <NavLink to={"/video/" + video?.id}>
+          <NavLink to={"/video/" + video?.id} className='middle__video-link'>
             <h4 className="middle__video-title">{video?.title}</h4>
           </NavLink>
           <p className="middle__video-comment">

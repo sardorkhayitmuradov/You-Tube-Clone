@@ -5,17 +5,16 @@ import UserProfile from './UserProfile/Profile'
 import Recommend from './RecommendVideos/Recommend';
 import UserChannel from './UserChannel/Channel';
 import { Context } from '../../../Context/Videos/Videos';
-import { Context as ToggleContext} from "../../../Context/Toggle/Toggle";
 
 import './Home.scss'
 
 function Home() {
 
-  const { setToggleButton } = React.useContext(ToggleContext);
+  // const { setToggleButton } = React.useContext(ToggleContext);
 
-  React.useEffect(() => {
-    setToggleButton(true);
-  }, []);
+  // React.useEffect(() => {
+  //   setToggleButton(true);
+  // }, []);
 
 
   const { videos, setVideos } = React.useContext(Context);
@@ -26,7 +25,7 @@ function Home() {
 
       const data = await res.json();
       if (data?.length > 0) {
-        const video = data.splice(1, 35);
+        const video = data.splice(20, 300);
         setVideos([...video]);
       }
     })();
